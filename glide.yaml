@@ -1,0 +1,49 @@
+package: github.com/alternative-storage/torus
+import:
+- package: github.com/DeanThompson/ginpprof
+- package: github.com/RoaringBitmap/roaring
+- package: github.com/barakmich/mmap-go
+- package: github.com/coreos/etcd
+  subpackages:
+  - clientv3
+- package: github.com/coreos/go-systemd
+  subpackages:
+  - dbus
+  - unit
+- package: github.com/coreos/pkg
+  subpackages:
+  - capnslog
+  - progressutil
+- package: github.com/dustin/go-humanize
+  #- package: github.com/gin-gonic/gin
+- package: github.com/godbus/dbus
+- package: github.com/gogo/protobuf
+  subpackages:
+  - gogoproto
+  - proto
+- package: github.com/kardianos/osext
+- package: github.com/mdlayher/aoe
+- package: github.com/mdlayher/ethernet
+- package: github.com/mdlayher/raw
+- package: github.com/pborman/uuid
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+- package: github.com/ricochet2200/go-disk-usage
+- package: github.com/serialx/hashring
+- package: github.com/spf13/cobra
+- package: golang.org/x/net
+  version: master
+  repo: https://go.googlesource.com/net
+  subpackages:
+  - http2
+  - lex/httplex
+  - context
+  - bpf
+  - trace
+  - http2/hpack
+  - internal/timeseries
+- package: google.golang.org/grpc
+- package: github.com/alternative-storage/go-tcmu
+- package: github.com/lpabon/godbc
+- package: github.com/cespare/prettybench

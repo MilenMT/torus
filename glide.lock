@@ -1,0 +1,204 @@
+hash: da7792839b9e11d41554dd51029399c1bd178f3bd7363692a2cb746aa0073531
+updated: 2017-06-14T21:25:28.399459906+09:00
+imports:
+- name: github.com/alternative-storage/go-tcmu
+  version: 5db4f4011c3aa62b8a1436c86e373a014b8317a0
+  subpackages:
+  - scsi
+- name: github.com/apache/thrift
+  version: 53dd39833a08ce33582e5ff31fa18bb4735d6731
+  subpackages:
+  - lib/go/thrift
+- name: github.com/barakmich/mmap-go
+  version: c4bd255520e591ff7549ab916c59206da5735e56
+- name: github.com/beorn7/perks
+  version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
+  subpackages:
+  - quantile
+- name: github.com/cespare/prettybench
+  version: 03b8cfe5406ce67a0b0da46f0c9e78b3d915a2c1
+- name: github.com/codahale/hdrhistogram
+  version: f8ad88b59a584afeee9d334eff879b104439117b
+- name: github.com/coreos/etcd
+  version: 9d7ed0e63a4e9907c04396d0a9a7a01ba08d2852
+  subpackages:
+  - auth/authpb
+  - clientv3
+  - etcdserver/api/v3rpc/rpctypes
+  - etcdserver/etcdserverpb
+  - mvcc/mvccpb
+- name: github.com/coreos/go-systemd
+  version: 48702e0da86bd25e76cfef347e2adeb434a0d0a6
+  subpackages:
+  - dbus
+  - journal
+  - unit
+- name: github.com/coreos/pkg
+  version: 3ac0863d7acf3bc44daf49afef8919af12f704ef
+  subpackages:
+  - capnslog
+  - progressutil
+- name: github.com/DeanThompson/ginpprof
+  version: 18e555cdf1a9504a2fb2a42c112c7e4a79fc3853
+- name: github.com/dustin/go-humanize
+  version: 88e58c26e9fe8ac578a0d76a68e32838acf17a8d
+- name: github.com/glycerine/go-unsnap-stream
+  version: 87275cecd8e984c5875577d22da7ce8945df780e
+- name: github.com/godbus/dbus
+  version: 5f6efc7ef2759c81b7ba876593971bfce311eab3
+- name: github.com/gogo/protobuf
+  version: 100ba4e885062801d56799d78530b73b178a78f3
+  subpackages:
+  - gogoproto
+  - jsonpb
+  - proto
+  - protoc-gen-gogo/descriptor
+  - sortkeys
+  - types
+- name: github.com/golang/protobuf
+  version: 5a0f697c9ed9d68fef0116532c6e05cfeae00e55
+  subpackages:
+  - proto
+  - ptypes/any
+- name: github.com/golang/snappy
+  version: d7b1e156f50d3c4664f683603af70e3e47fa0aa2
+- name: github.com/grpc-ecosystem/go-grpc-middleware
+  version: 04e29b049615a854b3a943e372e180c5ec3f7dc3
+  subpackages:
+  - tags
+  - tracing/opentracing
+  - util/metautils
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/kardianos/osext
+  version: 29ae4ffbc9a6fe9fb2bc5029050ce6996ea1d3bc
+- name: github.com/lpabon/godbc
+  version: 432535de9415f4e0333804357bcdf9024bf5748b
+- name: github.com/matttproud/golang_protobuf_extensions
+  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+  subpackages:
+  - pbutil
+- name: github.com/mdlayher/aoe
+  version: f389bbabc4961d53471c5d3b7e0c3618e638d510
+- name: github.com/mdlayher/ethernet
+  version: 28018267bba4d651e8e0fcbca8aae7c13f4ce4ae
+- name: github.com/mdlayher/raw
+  version: b730b008e228b7a17bead43ec95edff75c2b082a
+- name: github.com/mschoch/smat
+  version: 90eadee771aeab36e8bf796039b8c261bebebe4f
+- name: github.com/opentracing/opentracing-go
+  version: 1949ddbfd147afd4d964a9f00b24eb291e0e7c38
+  subpackages:
+  - ext
+  - log
+- name: github.com/pborman/uuid
+  version: a97ce2ca70fa5a848076093f05e639a89ca34d06
+- name: github.com/philhofer/fwd
+  version: 98c11a7a6ec829d672b03833c3d69a7fae1ca972
+- name: github.com/prometheus/client_golang
+  version: c5b7fccd204277076155f10851dad72b76a49317
+  subpackages:
+  - prometheus
+- name: github.com/prometheus/client_model
+  version: 6f3806018612930941127f2a7c6c453ba2c527d2
+  subpackages:
+  - go
+- name: github.com/prometheus/common
+  version: 13ba4ddd0caa9c28ca7b7bffe1dfa9ed8d5ef207
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - log
+  - model
+- name: github.com/prometheus/procfs
+  version: 65c1f6f8f0fc1e2185eb9863a3bc751496404259
+  subpackages:
+  - xfs
+- name: github.com/ricochet2200/go-disk-usage
+  version: f0d1b743428fc09792f93233d9412f89f88fa2ab
+  subpackages:
+  - du
+- name: github.com/RoaringBitmap/roaring
+  version: dd6fd8e4fda2d86845a0342794520f8bd95f76fd
+- name: github.com/serialx/hashring
+  version: 75d57fa264ad17fd929304dfdb02c8e278c5c01c
+- name: github.com/Sirupsen/logrus
+  version: ba1b36c82c5e05c4f912a88eab0dcd91a171688f
+- name: github.com/spf13/cobra
+  version: f368244301305f414206f889b1735a54cfc8bde8
+- name: github.com/spf13/pflag
+  version: cb88ea77998c3f024757528e3305022ab50b43be
+- name: github.com/tinylib/msgp
+  version: 362bfb3384d53ae4d5dd745983a4d70b6d23628c
+  subpackages:
+  - msgp
+- name: github.com/uber/jaeger-client-go
+  version: 465529424ed6b04a7fd2fcab6a9d6e96ea807fda
+  subpackages:
+  - config
+  - internal/spanlog
+  - log
+  - rpcmetrics
+  - thrift-gen/agent
+  - thrift-gen/sampling
+  - thrift-gen/zipkincore
+  - transport
+  - transport/udp
+  - utils
+- name: github.com/uber/jaeger-lib
+  version: b9556711760c45a30bd79c31c8f041d0d9aba997
+  subpackages:
+  - metrics
+- name: github.com/willf/bitset
+  version: 988f4f24992fc745de53c42df0da6581e42a6686
+- name: golang.org/x/crypto
+  version: 5bcd134fee4dd1475da17714aac19c0aa0142e2f
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: dfe83d419c9403b40b19d08cdba2afec27b002f7
+  repo: https://go.googlesource.com/net
+  subpackages:
+  - bpf
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: golang.org/x/sys
+  version: e24f485414aeafb646f6fca458b0bf869c0880a1
+  subpackages:
+  - unix
+  - windows
+  - windows/registry
+  - windows/svc/eventlog
+- name: golang.org/x/text
+  version: f28f36722d5ef2f9655ad3de1f248e3e52ad5ebd
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: de9f5e90fe9b278809363f08c2072d2f2a429de7
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: d2e1b51f33ff8c5e4a15560ff049d200e83726c5
+  subpackages:
+  - codes
+  - credentials
+  - grpclb/grpc_lb_v1
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - stats
+  - status
+  - tap
+  - transport
+testImports: []

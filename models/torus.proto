@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package models;
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option (gogoproto.equal_all) = true;
+option (gogoproto.verbose_equal_all) = true;
+
+option (gogoproto.unmarshaler_all) = true;
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+option (gogoproto.testgen_all) = true;
+option (gogoproto.benchgen_all) = true;
+option (gogoproto.populate_all) = true;
+
+message INode {
+  uint64 volume = 1;
+  uint64 inode = 2 [(gogoproto.customname) = "INode"];
+  uint64 filesize = 4;
+  map<string, string> attrs = 7;
+  repeated BlockLayer blocks = 8;
+}
+
+message BlockLayer {
+  uint32 type = 1;
+  bytes content = 2;
+}
+
+message Volume {
+  string name = 1;
+  uint64 id = 2;
+  string type = 3;
+
+  // TODO(barakmich): Respect sizes for FILE volumes.
+  uint64 max_bytes = 4;
+}
+
+message PeerInfo {
+  string uuid = 1 [(gogoproto.customname) = "UUID"];
+  string address = 2;
+
+  int64 last_seen = 3; // In Unix nanoseconds.
+  uint64 total_blocks = 4;
+  uint64 used_blocks = 5;
+  bool timed_out = 6;
+
+  RebalanceInfo rebalance_info = 7;
+
+  // ProtocolVersion is set by each peer to know if we're out of date or if a
+  // protocol migration has occured.
+  uint64 protocol_version = 8;
+}
+
+message RebalanceInfo {
+  int64 last_rebalance_finish = 1; // In Unix nanoseconds.
+  uint64 last_rebalance_blocks = 2;
+  bool rebalancing = 3;
+}
+
+message Ring {
+  uint32 type = 1;
+  uint32 version = 2;
+  uint32 replication_factor = 3;
+  repeated PeerInfo peers = 4;
+  map<string, bytes> attrs = 5;
+}
+
+message BlockRef {
+	uint64 volume = 1;
+	uint64 inode = 2 [(gogoproto.customname) = "INode"];
+	uint64 block = 3;
+}
+
+message INodeRef {
+	uint64 volume = 1;
+	uint64 inode = 2 [(gogoproto.customname) = "INode"];
+}
