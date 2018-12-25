@@ -16,7 +16,7 @@ This project is experimental status at this point.
 After forked from [original project] (retired currently), this project integrated
 
 
-It plans to create a bit more new feature, but performance improvment is the highest priority.
+It plans to create a bit more new feature, but performance improvement is the highest priority.
 
 ## Trying out Torus
 
